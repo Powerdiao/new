@@ -1,0 +1,83 @@
+2021-11-11 18:10:19 - main_link_prediction.py[line:412] - INFO: - Namespace(batch_size=20000, dataset='MyDataset', decoder='DisMult', dropout=0.05, eval_every=1, fan_out='10,25', gpu=0, log_every=20, loss='CrossEntropyLoss', lr=0.001, margin=10.0, model='RGCN', neg_share=False, num_epochs=50, num_heads=[8, 4], num_hidden=64, num_layers=2, num_negs=3, num_output=64, num_workers=0)
+2021-11-11 18:10:57 - main_link_prediction.py[line:168] - INFO: - --------------------------------------------------
+2021-11-11 18:10:57 - main_link_prediction.py[line:169] - INFO: - Dataloader size: 1734
+2021-11-11 18:10:57 - main_link_prediction.py[line:170] - INFO: - Dataloader sample graph: 40787683
+2021-11-11 18:10:57 - main_link_prediction.py[line:171] - INFO: - Train Edges: 34671896
+2021-11-11 18:10:57 - main_link_prediction.py[line:172] - INFO: - Test Edges: 2037945
+2021-11-11 18:10:57 - main_link_prediction.py[line:173] - INFO: - Valid Edges: 4077830
+2021-11-11 18:10:57 - main_link_prediction.py[line:181] - INFO: - --------------------------------------------------
+2021-11-11 18:11:09 - main_link_prediction.py[line:212] - INFO: - 1966658
+2021-11-11 18:11:24 - main_link_prediction.py[line:212] - INFO: - 1966827
+2021-11-11 18:11:32 - main_link_prediction.py[line:212] - INFO: - 1969190
+2021-11-11 18:11:40 - main_link_prediction.py[line:212] - INFO: - 1967338
+2021-11-11 18:11:48 - main_link_prediction.py[line:212] - INFO: - 1964865
+2021-11-11 18:11:57 - main_link_prediction.py[line:212] - INFO: - 1966902
+2021-11-11 18:12:05 - main_link_prediction.py[line:212] - INFO: - 1970315
+2021-11-11 18:12:13 - main_link_prediction.py[line:212] - INFO: - 1969122
+2021-11-11 18:12:21 - main_link_prediction.py[line:212] - INFO: - 1971679
+2021-11-11 18:12:29 - main_link_prediction.py[line:212] - INFO: - 1971128
+2021-11-11 18:12:38 - main_link_prediction.py[line:212] - INFO: - 1966968
+2021-11-11 18:12:46 - main_link_prediction.py[line:212] - INFO: - 1968762
+2021-11-11 18:12:54 - main_link_prediction.py[line:212] - INFO: - 1969044
+2021-11-11 18:13:02 - main_link_prediction.py[line:212] - INFO: - 1965364
+2021-11-11 18:13:10 - main_link_prediction.py[line:212] - INFO: - 1971719
+2021-11-11 18:13:18 - main_link_prediction.py[line:212] - INFO: - 1966534
+2021-11-11 18:13:27 - main_link_prediction.py[line:212] - INFO: - 1966930
+2021-11-11 18:13:35 - main_link_prediction.py[line:212] - INFO: - 1968446
+2021-11-11 18:13:43 - main_link_prediction.py[line:212] - INFO: - 1969319
+2021-11-11 18:13:51 - main_link_prediction.py[line:212] - INFO: - 1967346
+2021-11-11 18:13:56 - main_link_prediction.py[line:294] - INFO: - Epoch 00000 | Step 00020 | Loss 42.9585 | F1 0.3334 0.2501 0.5001 | Speed (samples/sec) 2447.1501|7341.4502 | Load 2.9298| train 5.2472 | GPU 2252.4 MB
+2021-11-11 18:13:59 - main_link_prediction.py[line:212] - INFO: - 1965924
+2021-11-11 18:14:08 - main_link_prediction.py[line:212] - INFO: - 1969495
+2021-11-11 18:14:16 - main_link_prediction.py[line:212] - INFO: - 1966828
+2021-11-11 18:14:24 - main_link_prediction.py[line:212] - INFO: - 1967812
+2021-11-11 18:14:32 - main_link_prediction.py[line:212] - INFO: - 1964375
+2021-11-11 18:14:40 - main_link_prediction.py[line:212] - INFO: - 1966748
+2021-11-11 18:14:49 - main_link_prediction.py[line:212] - INFO: - 1969621
+2021-11-11 18:14:56 - main_link_prediction.py[line:212] - INFO: - 1967308
+2021-11-11 18:15:05 - main_link_prediction.py[line:212] - INFO: - 1966953
+2021-11-11 18:15:13 - main_link_prediction.py[line:212] - INFO: - 1967723
+2021-11-11 18:15:21 - main_link_prediction.py[line:212] - INFO: - 1968316
+2021-11-11 18:15:30 - main_link_prediction.py[line:212] - INFO: - 1967216
+2021-11-11 18:15:38 - main_link_prediction.py[line:212] - INFO: - 1970693
+2021-11-11 18:15:46 - main_link_prediction.py[line:212] - INFO: - 1968630
+2021-11-11 18:15:54 - main_link_prediction.py[line:212] - INFO: - 1965673
+2021-11-11 18:16:02 - main_link_prediction.py[line:212] - INFO: - 1969564
+2021-11-11 18:16:11 - main_link_prediction.py[line:212] - INFO: - 1969017
+2021-11-11 18:16:19 - main_link_prediction.py[line:212] - INFO: - 1966667
+2021-11-11 18:16:27 - main_link_prediction.py[line:212] - INFO: - 1968529
+2021-11-11 18:16:35 - main_link_prediction.py[line:212] - INFO: - 1966529
+2021-11-11 18:16:40 - main_link_prediction.py[line:294] - INFO: - Epoch 00000 | Step 00040 | Loss 41.5485 | F1 0.3335 0.2501 0.5003 | Speed (samples/sec) 2443.6197|7330.8591 | Load 2.9391| train 5.2503 | GPU 2252.4 MB
+2021-11-11 18:16:43 - main_link_prediction.py[line:212] - INFO: - 1964821
+2021-11-11 18:16:52 - main_link_prediction.py[line:212] - INFO: - 1966140
+2021-11-11 18:17:00 - main_link_prediction.py[line:212] - INFO: - 1969068
+2021-11-11 18:17:08 - main_link_prediction.py[line:212] - INFO: - 1966692
+2021-11-11 18:17:16 - main_link_prediction.py[line:212] - INFO: - 1968272
+2021-11-11 18:17:24 - main_link_prediction.py[line:212] - INFO: - 1969014
+2021-11-11 18:17:33 - main_link_prediction.py[line:212] - INFO: - 1966262
+2021-11-11 18:17:41 - main_link_prediction.py[line:212] - INFO: - 1965952
+2021-11-11 18:17:49 - main_link_prediction.py[line:212] - INFO: - 1968134
+2021-11-11 18:17:57 - main_link_prediction.py[line:212] - INFO: - 1968706
+2021-11-11 18:18:05 - main_link_prediction.py[line:212] - INFO: - 1968140
+2021-11-11 18:18:14 - main_link_prediction.py[line:212] - INFO: - 1967345
+2021-11-11 18:18:22 - main_link_prediction.py[line:212] - INFO: - 1967103
+2021-11-11 18:18:30 - main_link_prediction.py[line:212] - INFO: - 1968333
+2021-11-11 18:18:39 - main_link_prediction.py[line:212] - INFO: - 1966458
+2021-11-11 18:18:46 - main_link_prediction.py[line:212] - INFO: - 1966436
+2021-11-11 18:18:55 - main_link_prediction.py[line:212] - INFO: - 1971909
+2021-11-11 18:19:03 - main_link_prediction.py[line:212] - INFO: - 1965621
+2021-11-11 18:19:11 - main_link_prediction.py[line:212] - INFO: - 1969200
+2021-11-11 18:19:19 - main_link_prediction.py[line:212] - INFO: - 1966011
+2021-11-11 18:19:25 - main_link_prediction.py[line:294] - INFO: - Epoch 00000 | Step 00060 | Loss 35.9830 | F1 0.3336 0.2502 0.5006 | Speed (samples/sec) 2440.3498|7321.0493 | Load 2.9365| train 5.2635 | GPU 2252.4 MB
+2021-11-11 18:19:27 - main_link_prediction.py[line:212] - INFO: - 1971082
+2021-11-11 18:19:36 - main_link_prediction.py[line:212] - INFO: - 1967069
+2021-11-11 18:19:44 - main_link_prediction.py[line:212] - INFO: - 1970981
+2021-11-11 18:19:52 - main_link_prediction.py[line:212] - INFO: - 1969761
+2021-11-11 18:20:00 - main_link_prediction.py[line:212] - INFO: - 1966609
+2021-11-11 18:20:08 - main_link_prediction.py[line:212] - INFO: - 1968351
+2021-11-11 18:20:17 - main_link_prediction.py[line:212] - INFO: - 1967756
+2021-11-11 18:20:25 - main_link_prediction.py[line:212] - INFO: - 1968131
+2021-11-11 18:20:33 - main_link_prediction.py[line:212] - INFO: - 1968204
+2021-11-11 18:20:41 - main_link_prediction.py[line:212] - INFO: - 1967204
+2021-11-11 18:20:49 - main_link_prediction.py[line:212] - INFO: - 1969722
+2021-11-11 18:20:58 - main_link_prediction.py[line:212] - INFO: - 1969287

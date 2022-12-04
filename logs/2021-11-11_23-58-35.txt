@@ -1,0 +1,12 @@
+2021-11-11 23:58:35 - main_link_prediction.py[line:410] - INFO: - Namespace(batch_size=640000, dataset='MyDataset', decoder='DisMult', dropout=0.05, eval_every=1, fan_out='10,25', gpu=2, log_every=20, loss='CrossEntropyLoss', lr=0.001, margin=10.0, model='RGCN', neg_share=False, num_epochs=50, num_eval_negs=1000, num_heads=[8, 4], num_hidden=64, num_layers=2, num_negs=3, num_output=64, num_workers=0)
+2021-11-11 23:58:57 - main_link_prediction.py[line:168] - INFO: - --------------------------------------------------
+2021-11-11 23:58:57 - main_link_prediction.py[line:169] - INFO: - Dataloader size: 55
+2021-11-11 23:58:57 - main_link_prediction.py[line:170] - INFO: - Dataloader sample graph: 40787683
+2021-11-11 23:58:58 - main_link_prediction.py[line:171] - INFO: - Train Edges: 34671896
+2021-11-11 23:58:58 - main_link_prediction.py[line:172] - INFO: - Test Edges: 2037945
+2021-11-11 23:58:58 - main_link_prediction.py[line:173] - INFO: - Valid Edges: 4077830
+2021-11-11 23:58:58 - main_link_prediction.py[line:181] - INFO: - --------------------------------------------------
+2021-11-12 00:13:21 - main_link_prediction.py[line:294] - INFO: - Epoch 00000 | Step 00020 | Loss 67.8965 | F1 0.3334 0.2501 0.5002 | Speed (samples/sec) 14963.2330|44889.6989 | Load 10.1270| train 32.6465 | GPU 3963.2 MB
+2021-11-12 00:27:35 - main_link_prediction.py[line:294] - INFO: - Epoch 00000 | Step 00040 | Loss 67.8237 | F1 0.3335 0.2501 0.5003 | Speed (samples/sec) 14971.6189|44914.8566 | Load 10.1880| train 32.5610 | GPU 3969.6 MB
+2021-11-12 00:37:51 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 2332.6245
+2021-11-12 00:37:51 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00000 | Step 00054 | Loss 3610.0482 | F1 0.3336 0.2502 0.5006 | Speed (samples/sec) 14814.0109|44442.0326 | Load 10.0938| train 32.1569 | GPU 3971.2 MB

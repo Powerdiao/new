@@ -1,0 +1,59 @@
+2021-11-18 23:51:45 - main_link_prediction.py[line:410] - INFO: - Namespace(batch_size=1280000, dataset='MyDataset', decoder='DisMult', dropout=0.05, eval_every=1, fan_out='10,25', gpu=2, log_every=20, loss='CrossEntropyLoss', lr=0.001, margin=10.0, model='RGCN', neg_share=False, num_epochs=10, num_eval_negs=1000, num_heads=[8, 4], num_hidden=64, num_layers=2, num_negs=3, num_output=64, num_workers=0)
+2021-11-18 23:52:06 - main_link_prediction.py[line:168] - INFO: - --------------------------------------------------
+2021-11-18 23:52:06 - main_link_prediction.py[line:169] - INFO: - Dataloader size: 28
+2021-11-18 23:52:06 - main_link_prediction.py[line:170] - INFO: - Dataloader sample graph: 40787683
+2021-11-18 23:52:07 - main_link_prediction.py[line:171] - INFO: - Train Edges: 34671896
+2021-11-18 23:52:07 - main_link_prediction.py[line:172] - INFO: - Test Edges: 2037945
+2021-11-18 23:52:07 - main_link_prediction.py[line:173] - INFO: - Valid Edges: 4077830
+2021-11-18 23:52:07 - main_link_prediction.py[line:181] - INFO: - --------------------------------------------------
+2021-11-19 00:18:53 - main_link_prediction.py[line:294] - INFO: - Epoch 00000 | Step 00020 | Loss 67.8912 | F1 0.3334 0.2501 0.5002 | Speed (samples/sec) 16103.5134|48310.5403 | Load 16.3677| train 63.1214 | GPU 4846.2 MB
+2021-11-19 00:28:26 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 2178.7930
+2021-11-19 00:28:26 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00000 | Step 00027 | Loss 1944.4234 | F1 0.3335 0.2501 0.5003 | Speed (samples/sec) 15717.6220|47152.8661 | Load 15.9032| train 61.0656 | GPU 4846.2 MB
+2021-11-19 00:28:26 - utils.py[line:250] - INFO: - eval subgraph edge number: 4077830
+2021-11-19 01:37:01 - main_link_prediction.py[line:308] - INFO: - Eval Link Prediction valid MRR 0.1029 MR 71.4551 Hits@1 0.0666 Hits@50 0.5172 Hits@100 0.8158 NDCG 0.0000
+2021-11-19 02:03:24 - main_link_prediction.py[line:294] - INFO: - Epoch 00001 | Step 00020 | Loss 66.4495 | F1 0.3339 0.2504 0.5010 | Speed (samples/sec) 15923.1428|47769.4283 | Load 15.6993| train 62.2232 | GPU 11686.1 MB
+2021-11-19 02:12:56 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 2154.5549
+2021-11-19 02:12:56 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00001 | Step 00027 | Loss 1944.1375 | F1 0.3339 0.2504 0.5011 | Speed (samples/sec) 15772.5557|47317.6672 | Load 15.4718| train 61.4839 | GPU 11686.1 MB
+2021-11-19 02:12:56 - utils.py[line:250] - INFO: - eval subgraph edge number: 4077830
+2021-11-19 03:03:55 - main_link_prediction.py[line:308] - INFO: - Eval Link Prediction valid MRR 0.1019 MR 56.1250 Hits@1 0.0631 Hits@50 0.6722 Hits@100 0.9449 NDCG 0.0000
+2021-11-19 03:30:21 - main_link_prediction.py[line:294] - INFO: - Epoch 00002 | Step 00020 | Loss 70.5629 | F1 0.3345 0.2508 0.5023 | Speed (samples/sec) 15874.4800|47623.4401 | Load 15.4851| train 62.1088 | GPU 11686.1 MB
+2021-11-19 03:39:55 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 2159.9902
+2021-11-19 03:39:55 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00002 | Step 00027 | Loss 1943.8545 | F1 0.3347 0.2509 0.5025 | Speed (samples/sec) 15775.7404|47327.2212 | Load 15.3302| train 61.6891 | GPU 11686.1 MB
+2021-11-19 03:39:55 - utils.py[line:250] - INFO: - eval subgraph edge number: 4077830
+2021-11-19 04:29:17 - main_link_prediction.py[line:308] - INFO: - Eval Link Prediction valid MRR 0.1009 MR 54.1150 Hits@1 0.0622 Hits@50 0.7469 Hits@100 0.9479 NDCG 0.0000
+2021-11-19 04:55:44 - main_link_prediction.py[line:294] - INFO: - Epoch 00003 | Step 00020 | Loss 69.0560 | F1 0.3357 0.2515 0.5043 | Speed (samples/sec) 15846.6333|47539.9000 | Load 15.3820| train 62.0968 | GPU 11686.1 MB
+2021-11-19 05:05:20 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 2162.7230
+2021-11-19 05:05:20 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00003 | Step 00027 | Loss 1944.8904 | F1 0.3360 0.2518 0.5049 | Speed (samples/sec) 15772.2031|47316.6093 | Load 15.2696| train 61.8056 | GPU 11686.1 MB
+2021-11-19 05:05:20 - utils.py[line:250] - INFO: - eval subgraph edge number: 4077830
+2021-11-19 05:54:18 - main_link_prediction.py[line:308] - INFO: - Eval Link Prediction valid MRR 0.0998 MR 54.8055 Hits@1 0.0613 Hits@50 0.7663 Hits@100 0.9465 NDCG 0.0000
+2021-11-19 06:20:39 - main_link_prediction.py[line:294] - INFO: - Epoch 00004 | Step 00020 | Loss 67.6428 | F1 0.3373 0.2527 0.5073 | Speed (samples/sec) 15838.7796|47516.3389 | Load 15.2600| train 62.1166 | GPU 11686.1 MB
+2021-11-19 06:30:14 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 2155.1511
+2021-11-19 06:30:14 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00004 | Step 00027 | Loss 1936.1941 | F1 0.3377 0.2529 0.5081 | Speed (samples/sec) 15781.7594|47345.2781 | Load 15.1788| train 61.8743 | GPU 11686.1 MB
+2021-11-19 06:30:14 - utils.py[line:250] - INFO: - eval subgraph edge number: 4077830
+2021-11-19 07:19:04 - main_link_prediction.py[line:308] - INFO: - Eval Link Prediction valid MRR 0.0997 MR 56.3266 Hits@1 0.0612 Hits@50 0.7483 Hits@100 0.9486 NDCG 0.0000
+2021-11-19 07:45:25 - main_link_prediction.py[line:294] - INFO: - Epoch 00005 | Step 00020 | Loss 68.9540 | F1 0.3398 0.2543 0.5119 | Speed (samples/sec) 15833.8475|47501.5424 | Load 15.2157| train 62.0932 | GPU 11687.1 MB
+2021-11-19 07:54:58 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 2153.6153
+2021-11-19 07:54:58 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00005 | Step 00027 | Loss 1940.1692 | F1 0.3400 0.2544 0.5122 | Speed (samples/sec) 15789.6917|47369.0752 | Load 15.1573| train 61.8718 | GPU 11687.1 MB
+2021-11-19 07:54:58 - utils.py[line:250] - INFO: - eval subgraph edge number: 4077830
+2021-11-19 08:43:45 - main_link_prediction.py[line:308] - INFO: - Eval Link Prediction valid MRR 0.1005 MR 56.5389 Hits@1 0.0610 Hits@50 0.7472 Hits@100 0.9485 NDCG 0.0000
+2021-11-19 09:10:14 - main_link_prediction.py[line:294] - INFO: - Epoch 00006 | Step 00020 | Loss 70.3729 | F1 0.3424 0.2560 0.5167 | Speed (samples/sec) 15824.4627|47473.3881 | Load 15.1993| train 62.0915 | GPU 11687.1 MB
+2021-11-19 09:19:47 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 2162.4347
+2021-11-19 09:19:47 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00006 | Step 00027 | Loss 1926.3146 | F1 0.3425 0.2561 0.5169 | Speed (samples/sec) 15786.2218|47358.6654 | Load 15.1581| train 61.8985 | GPU 11687.1 MB
+2021-11-19 09:19:48 - utils.py[line:250] - INFO: - eval subgraph edge number: 4077830
+2021-11-19 10:08:43 - main_link_prediction.py[line:308] - INFO: - Eval Link Prediction valid MRR 0.1027 MR 56.6975 Hits@1 0.0618 Hits@50 0.7563 Hits@100 0.9482 NDCG 0.0000
+2021-11-19 10:35:14 - main_link_prediction.py[line:294] - INFO: - Epoch 00007 | Step 00020 | Loss 70.3221 | F1 0.3441 0.2572 0.5199 | Speed (samples/sec) 15815.2299|47445.6896 | Load 15.1719| train 62.1170 | GPU 11687.1 MB
+2021-11-19 10:44:50 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 2167.0697
+2021-11-19 10:44:50 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00007 | Step 00027 | Loss 1936.3432 | F1 0.3443 0.2573 0.5201 | Speed (samples/sec) 15779.2286|47337.6858 | Load 15.1288| train 61.9703 | GPU 11687.1 MB
+2021-11-19 10:44:51 - utils.py[line:250] - INFO: - eval subgraph edge number: 4077830
+2021-11-19 11:33:54 - main_link_prediction.py[line:308] - INFO: - Eval Link Prediction valid MRR 0.1047 MR 56.4643 Hits@1 0.0623 Hits@50 0.7634 Hits@100 0.9483 NDCG 0.0000
+2021-11-19 12:00:16 - main_link_prediction.py[line:294] - INFO: - Epoch 00008 | Step 00020 | Loss 70.2896 | F1 0.3456 0.2582 0.5224 | Speed (samples/sec) 15813.2159|47439.6478 | Load 15.1593| train 62.1041 | GPU 11687.4 MB
+2021-11-19 12:09:51 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 2156.4470
+2021-11-19 12:09:51 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00008 | Step 00027 | Loss 1930.4351 | F1 0.3456 0.2582 0.5224 | Speed (samples/sec) 15782.5754|47347.7261 | Load 15.1229| train 61.9665 | GPU 11687.4 MB
+2021-11-19 12:09:51 - utils.py[line:250] - INFO: - eval subgraph edge number: 4077830
+2021-11-19 12:58:56 - main_link_prediction.py[line:308] - INFO: - Eval Link Prediction valid MRR 0.1067 MR 59.2662 Hits@1 0.0631 Hits@50 0.7587 Hits@100 0.9365 NDCG 0.0000
+2021-11-19 13:25:21 - main_link_prediction.py[line:294] - INFO: - Epoch 00009 | Step 00020 | Loss 68.8772 | F1 0.3462 0.2586 0.5232 | Speed (samples/sec) 15809.6680|47429.0039 | Load 15.1651| train 62.0867 | GPU 11687.4 MB
+2021-11-19 13:34:59 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 2163.1232
+2021-11-19 13:34:59 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00009 | Step 00027 | Loss 1931.2502 | F1 0.3463 0.2587 0.5233 | Speed (samples/sec) 15780.3822|47341.1466 | Load 15.1287| train 61.9763 | GPU 11687.4 MB
+2021-11-19 13:34:59 - utils.py[line:250] - INFO: - eval subgraph edge number: 4077830
+2021-11-19 14:24:04 - main_link_prediction.py[line:308] - INFO: - Eval Link Prediction valid MRR 0.1041 MR 67.0089 Hits@1 0.0628 Hits@50 0.7293 Hits@100 0.9004 NDCG 0.0000
+2021-11-19 14:24:04 - main_link_prediction.py[line:330] - INFO: - Avg epoch time: 2401.544675985972

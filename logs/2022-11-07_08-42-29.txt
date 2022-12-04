@@ -1,0 +1,7 @@
+2022-11-07 08:42:29 - main_link_prediction.py[line:430] - INFO: - Namespace(batch_size=80000, dataset='ACMDataset', decoder='DisMult', dropout=0.05, eval_every=1, fan_out='10,25', gpu=2, log_every=20, loss='CrossEntropyLoss', lr=0.001, margin=10.0, model='HAN', neg_share=False, num_epochs=10, num_eval_negs=1000, num_heads=[8, 4], num_hidden=64, num_layers=2, num_negs=3, num_output=64, num_workers=0)
+2022-11-07 08:42:37 - main_link_prediction.py[line:179] - INFO: - --------------------------------------------------
+2022-11-07 08:42:37 - main_link_prediction.py[line:180] - INFO: - Dataloader size: 2
+2022-11-07 08:42:37 - main_link_prediction.py[line:182] - INFO: - Train Edges: 136587
+2022-11-07 08:42:37 - main_link_prediction.py[line:183] - INFO: - Test Edges: 8020
+2022-11-07 08:42:37 - main_link_prediction.py[line:184] - INFO: - Valid Edges: 16079
+2022-11-07 08:42:37 - main_link_prediction.py[line:192] - INFO: - --------------------------------------------------

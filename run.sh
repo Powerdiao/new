@@ -1,0 +1,16 @@
+CUDA_LAUNCH_BLOCKING=1 python -u main_link_prediction.py \
+--gpu 2 \
+--model RGCN \
+--decoder DisMult \
+--dataset ACMDataset \
+--batch-size 80000 \
+--num-epochs 10 \
+--margin 10.0 \
+--dropout 0.05 \
+--lr 0.001 \
+--num-layers 2 \
+--num-heads 8 4 \
+--num-negs 3 \
+--num-eval-negs 1000 \
+--num-hidden 64 \
+--eval-every 1

@@ -1,0 +1,16 @@
+2021-11-15 13:49:19 - main_link_prediction.py[line:410] - INFO: - Namespace(batch_size=320000, dataset='MyDataset', decoder='DisMult', dropout=0.05, eval_every=1, fan_out='10,25', gpu=2, log_every=20, loss='CrossEntropyLoss', lr=0.001, margin=10.0, model='RGCN', neg_share=False, num_epochs=50, num_eval_negs=1000, num_heads=[8, 4], num_hidden=64, num_layers=2, num_negs=3, num_output=64, num_workers=0)
+2021-11-15 13:49:39 - main_link_prediction.py[line:168] - INFO: - --------------------------------------------------
+2021-11-15 13:49:39 - main_link_prediction.py[line:169] - INFO: - Dataloader size: 109
+2021-11-15 13:49:40 - main_link_prediction.py[line:170] - INFO: - Dataloader sample graph: 40787683
+2021-11-15 13:49:40 - main_link_prediction.py[line:171] - INFO: - Train Edges: 34671896
+2021-11-15 13:49:40 - main_link_prediction.py[line:172] - INFO: - Test Edges: 2037945
+2021-11-15 13:49:40 - main_link_prediction.py[line:173] - INFO: - Valid Edges: 4077830
+2021-11-15 13:49:40 - main_link_prediction.py[line:181] - INFO: - --------------------------------------------------
+2021-11-15 14:01:49 - main_link_prediction.py[line:294] - INFO: - Epoch 00000 | Step 00020 | Loss 60.9801 | F1 0.3334 0.2500 0.5001 | Speed (samples/sec) 8909.5436|26728.6307 | Load 7.1555| train 28.7626 | GPU 3084.9 MB
+2021-11-15 14:13:47 - main_link_prediction.py[line:294] - INFO: - Epoch 00000 | Step 00040 | Loss 65.0826 | F1 0.3335 0.2501 0.5003 | Speed (samples/sec) 8911.5526|26734.6578 | Load 7.1390| train 28.7716 | GPU 3087.2 MB
+2021-11-15 14:25:47 - main_link_prediction.py[line:294] - INFO: - Epoch 00000 | Step 00060 | Loss 60.8328 | F1 0.3336 0.2502 0.5005 | Speed (samples/sec) 8905.1482|26715.4446 | Load 7.1230| train 28.8134 | GPU 3087.4 MB
+2021-11-15 14:37:47 - main_link_prediction.py[line:294] - INFO: - Epoch 00000 | Step 00080 | Loss 60.8346 | F1 0.3339 0.2504 0.5010 | Speed (samples/sec) 8902.7284|26708.1853 | Load 7.1346| train 28.8115 | GPU 3088.7 MB
+2021-11-15 14:49:45 - main_link_prediction.py[line:294] - INFO: - Epoch 00000 | Step 00100 | Loss 60.7928 | F1 0.3341 0.2505 0.5015 | Speed (samples/sec) 8903.4129|26710.2386 | Load 7.1523| train 28.7909 | GPU 3088.8 MB
+2021-11-15 14:54:51 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 3911.5367
+2021-11-15 14:54:52 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00000 | Step 00108 | Loss 6606.9028 | F1 0.3343 0.2506 0.5017 | Speed (samples/sec) 8876.1756|26628.5268 | Load 7.1221| train 28.6563 | GPU 3088.8 MB
+2021-11-15 14:54:52 - utils.py[line:250] - INFO: - eval subgraph edge number: 4077830

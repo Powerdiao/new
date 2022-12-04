@@ -1,0 +1,11 @@
+2021-11-17 00:46:16 - main_link_prediction.py[line:410] - INFO: - Namespace(batch_size=100000, dataset='ACMDataset', decoder='DisMult', dropout=0.05, eval_every=1, fan_out='10,25', gpu=1, log_every=20, loss='CrossEntropyLoss', lr=0.001, margin=10.0, model='HGT', neg_share=False, num_epochs=10, num_eval_negs=100, num_heads=[8, 4], num_hidden=64, num_layers=2, num_negs=3, num_output=64, num_workers=0)
+2021-11-17 00:46:21 - main_link_prediction.py[line:168] - INFO: - --------------------------------------------------
+2021-11-17 00:46:21 - main_link_prediction.py[line:169] - INFO: - Dataloader size: 2
+2021-11-17 00:46:21 - main_link_prediction.py[line:170] - INFO: - Dataloader sample graph: 160686
+2021-11-17 00:46:21 - main_link_prediction.py[line:171] - INFO: - Train Edges: 136587
+2021-11-17 00:46:21 - main_link_prediction.py[line:172] - INFO: - Test Edges: 8020
+2021-11-17 00:46:21 - main_link_prediction.py[line:173] - INFO: - Valid Edges: 16079
+2021-11-17 00:46:21 - main_link_prediction.py[line:181] - INFO: - --------------------------------------------------
+2021-11-17 00:46:32 - main_link_prediction.py[line:299] - INFO: - Epoch Time(s): 10.6513
+2021-11-17 00:46:32 - main_link_prediction.py[line:303] - INFO: - [Total] Epoch 00000 | Step 00001 | Loss 17.0957 | F1 0.3349 0.2510 0.5028 | Speed (samples/sec) nan|nan | Load nan| train nan | GPU 466.9 MB
+2021-11-17 00:46:32 - utils.py[line:250] - INFO: - eval subgraph edge number: 16079

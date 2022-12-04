@@ -1,0 +1,78 @@
+Using backend: pytorch
+main_link_prediction.py[line:410]: - Namespace(batch_size=100000, dataset='ACMDataset', decoder='DisMult', dropout=0.05, eval_every=1, fan_out='10,25', gpu=1, log_every=20, loss='CrossEntropyLoss', lr=0.001, margin=10.0, model='HGT', neg_share=False, num_epochs=10, num_eval_negs=100, num_heads=[8, 4], num_hidden=64, num_layers=2, num_negs=3, num_output=64, num_workers=0)
+Finished data loading.
+  NumNodes: 30003
+  NumEdges: 160686
+  NumFeats: 128
+  NumNodesType: 3
+  NumRelsType: 6
+main_link_prediction.py[line:168]: - --------------------------------------------------
+main_link_prediction.py[line:169]: - Dataloader size: 2
+main_link_prediction.py[line:170]: - Dataloader sample graph: 160686
+main_link_prediction.py[line:171]: - Train Edges: 136587
+main_link_prediction.py[line:172]: - Test Edges: 8020
+main_link_prediction.py[line:173]: - Valid Edges: 16079
+main_link_prediction.py[line:181]: - --------------------------------------------------
+/home/LAB/zengfr/anaconda3/envs/xyf_conda/lib/python3.7/site-packages/dgl/base.py:45: DGLWarning: Key word argument preserve_nodes is deprecated. Use relabel_nodes instead.
+  return warnings.warn(message, category=category, stacklevel=1)
+main_link_prediction.py:235: UserWarning: This overload of nonzero is deprecated:
+	nonzero()
+Consider using one of the following signatures instead:
+	nonzero(*, bool as_tuple) (Triggered internally at  /opt/conda/conda-bld/pytorch_1607370156314/work/torch/csrc/utils/python_arg_parser.cpp:882.)
+  select_ids = torch.cat([(input_nodes[k] == i).nonzero() for i in pos_graph.ndata['_ID'][k]]).squeeze()
+main_link_prediction.py[line:299]: - Epoch Time(s): 7.4810
+/home/LAB/zengfr/anaconda3/envs/xyf_conda/lib/python3.7/site-packages/numpy/core/fromnumeric.py:3441: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/home/LAB/zengfr/anaconda3/envs/xyf_conda/lib/python3.7/site-packages/numpy/core/_methods.py:189: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+main_link_prediction.py[line:303]: - [Total] Epoch 00000 | Step 00001 | Loss 17.0957 | F1 0.3349 0.2510 0.5028 | Speed (samples/sec) nan|nan | Load nan| train nan | GPU 466.9 MB
+utils.py[line:250]: - eval subgraph edge number: 16079
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:00<00:03,  2.38it/s] 22%|██▏       | 2/9 [00:00<00:02,  2.57it/s] 33%|███▎      | 3/9 [00:01<00:02,  2.54it/s] 44%|████▍     | 4/9 [00:01<00:01,  2.53it/s] 56%|█████▌    | 5/9 [00:01<00:01,  2.59it/s] 67%|██████▋   | 6/9 [00:02<00:01,  2.56it/s] 78%|███████▊  | 7/9 [00:02<00:00,  2.52it/s] 89%|████████▉ | 8/9 [00:03<00:00,  2.47it/s]100%|██████████| 9/9 [00:03<00:00,  2.98it/s]100%|██████████| 9/9 [00:03<00:00,  2.61it/s]
+main_link_prediction.py[line:308]: - Eval Link Prediction valid MRR 0.0687 MR 48.2796 Hits@1 0.0231 Hits@50 0.0715 Hits@100 0.1260 NDCG 0.0000
+main_link_prediction.py[line:299]: - Epoch Time(s): 6.5933
+main_link_prediction.py[line:303]: - [Total] Epoch 00001 | Step 00001 | Loss 16.6549 | F1 0.3397 0.2543 0.5114 | Speed (samples/sec) 12393.6072|37180.8217 | Load 0.2456| train 2.7065 | GPU 470.2 MB
+utils.py[line:250]: - eval subgraph edge number: 16079
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:00<00:02,  2.72it/s] 22%|██▏       | 2/9 [00:00<00:02,  2.67it/s] 33%|███▎      | 3/9 [00:01<00:02,  2.68it/s] 44%|████▍     | 4/9 [00:01<00:01,  2.66it/s] 56%|█████▌    | 5/9 [00:01<00:01,  2.65it/s] 67%|██████▋   | 6/9 [00:02<00:01,  2.56it/s] 78%|███████▊  | 7/9 [00:02<00:00,  2.55it/s] 89%|████████▉ | 8/9 [00:03<00:00,  2.53it/s]100%|██████████| 9/9 [00:03<00:00,  3.09it/s]100%|██████████| 9/9 [00:03<00:00,  2.74it/s]
+main_link_prediction.py[line:308]: - Eval Link Prediction valid MRR 0.0816 MR 46.8932 Hits@1 0.0332 Hits@50 0.0900 Hits@100 0.1452 NDCG 0.0000
+main_link_prediction.py[line:299]: - Epoch Time(s): 6.6153
+main_link_prediction.py[line:303]: - [Total] Epoch 00002 | Step 00001 | Loss 16.3516 | F1 0.3437 0.2572 0.5180 | Speed (samples/sec) 17406.8095|52220.4284 | Load 0.4355| train 2.7534 | GPU 470.2 MB
+utils.py[line:250]: - eval subgraph edge number: 16079
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:00<00:02,  2.68it/s] 22%|██▏       | 2/9 [00:00<00:02,  2.67it/s] 33%|███▎      | 3/9 [00:01<00:02,  2.63it/s] 44%|████▍     | 4/9 [00:01<00:01,  2.58it/s] 56%|█████▌    | 5/9 [00:01<00:01,  2.58it/s] 67%|██████▋   | 6/9 [00:02<00:01,  2.62it/s] 78%|███████▊  | 7/9 [00:02<00:00,  2.61it/s] 89%|████████▉ | 8/9 [00:03<00:00,  2.61it/s]100%|██████████| 9/9 [00:03<00:00,  3.22it/s]100%|██████████| 9/9 [00:03<00:00,  2.77it/s]
+main_link_prediction.py[line:308]: - Eval Link Prediction valid MRR 0.0862 MR 45.7228 Hits@1 0.0356 Hits@50 0.0963 Hits@100 0.1548 NDCG 0.0000
+main_link_prediction.py[line:299]: - Epoch Time(s): 6.5563
+main_link_prediction.py[line:303]: - [Total] Epoch 00003 | Step 00001 | Loss 16.0794 | F1 0.3474 0.2600 0.5233 | Speed (samples/sec) 18473.6903|55421.0710 | Load 0.4534| train 2.7710 | GPU 470.4 MB
+utils.py[line:250]: - eval subgraph edge number: 16079
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:00<00:03,  2.65it/s] 22%|██▏       | 2/9 [00:00<00:02,  2.64it/s] 33%|███▎      | 3/9 [00:01<00:02,  2.63it/s] 44%|████▍     | 4/9 [00:01<00:01,  2.64it/s] 56%|█████▌    | 5/9 [00:01<00:01,  2.48it/s] 67%|██████▋   | 6/9 [00:02<00:01,  2.53it/s] 78%|███████▊  | 7/9 [00:02<00:00,  2.48it/s] 89%|████████▉ | 8/9 [00:03<00:00,  2.50it/s]100%|██████████| 9/9 [00:03<00:00,  3.01it/s]100%|██████████| 9/9 [00:03<00:00,  2.68it/s]
+main_link_prediction.py[line:308]: - Eval Link Prediction valid MRR 0.0898 MR 44.4380 Hits@1 0.0376 Hits@50 0.1026 Hits@100 0.1680 NDCG 0.0000
+main_link_prediction.py[line:299]: - Epoch Time(s): 6.9806
+main_link_prediction.py[line:303]: - [Total] Epoch 00004 | Step 00001 | Loss 15.8575 | F1 0.3510 0.2630 0.5277 | Speed (samples/sec) 18703.6258|56110.8774 | Load 0.4739| train 2.8264 | GPU 470.4 MB
+utils.py[line:250]: - eval subgraph edge number: 16079
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:00<00:03,  2.55it/s] 22%|██▏       | 2/9 [00:00<00:02,  2.53it/s] 33%|███▎      | 3/9 [00:01<00:02,  2.50it/s] 44%|████▍     | 4/9 [00:01<00:02,  2.45it/s] 56%|█████▌    | 5/9 [00:02<00:01,  2.44it/s] 67%|██████▋   | 6/9 [00:02<00:01,  2.37it/s] 78%|███████▊  | 7/9 [00:02<00:00,  2.38it/s] 89%|████████▉ | 8/9 [00:03<00:00,  2.41it/s]100%|██████████| 9/9 [00:03<00:00,  2.95it/s]100%|██████████| 9/9 [00:03<00:00,  2.57it/s]
+main_link_prediction.py[line:308]: - Eval Link Prediction valid MRR 0.0944 MR 42.8132 Hits@1 0.0391 Hits@50 0.1100 Hits@100 0.1787 NDCG 0.0000
+main_link_prediction.py[line:299]: - Epoch Time(s): 14.9450
+main_link_prediction.py[line:303]: - [Total] Epoch 00005 | Step 00001 | Loss 15.6104 | F1 0.3554 0.2671 0.5310 | Speed (samples/sec) 17137.9970|51413.9911 | Load 0.5177| train 3.7096 | GPU 471.1 MB
+utils.py[line:250]: - eval subgraph edge number: 16079
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:01<00:09,  1.21s/it] 22%|██▏       | 2/9 [00:02<00:09,  1.30s/it] 33%|███▎      | 3/9 [00:03<00:07,  1.30s/it] 44%|████▍     | 4/9 [00:05<00:06,  1.27s/it] 56%|█████▌    | 5/9 [00:05<00:04,  1.04s/it] 67%|██████▋   | 6/9 [00:06<00:02,  1.13it/s] 78%|███████▊  | 7/9 [00:07<00:01,  1.02it/s] 89%|████████▉ | 8/9 [00:08<00:01,  1.04s/it]100%|██████████| 9/9 [00:09<00:00,  1.16it/s]100%|██████████| 9/9 [00:09<00:00,  1.02s/it]
+main_link_prediction.py[line:308]: - Eval Link Prediction valid MRR 0.0968 MR 41.2207 Hits@1 0.0383 Hits@50 0.1167 Hits@100 0.1911 NDCG 0.0000
+main_link_prediction.py[line:299]: - Epoch Time(s): 17.2322
+main_link_prediction.py[line:303]: - [Total] Epoch 00006 | Step 00001 | Loss 15.4783 | F1 0.3585 0.2702 0.5322 | Speed (samples/sec) 15388.2127|46164.6381 | Load 0.5533| train 4.4719 | GPU 471.1 MB
+utils.py[line:250]: - eval subgraph edge number: 16079
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:01<00:09,  1.17s/it] 22%|██▏       | 2/9 [00:02<00:08,  1.20s/it] 33%|███▎      | 3/9 [00:03<00:07,  1.29s/it] 44%|████▍     | 4/9 [00:05<00:06,  1.31s/it] 56%|█████▌    | 5/9 [00:06<00:05,  1.32s/it] 67%|██████▋   | 6/9 [00:07<00:03,  1.07s/it] 78%|███████▊  | 7/9 [00:08<00:02,  1.16s/it] 89%|████████▉ | 8/9 [00:09<00:01,  1.22s/it]100%|██████████| 9/9 [00:10<00:00,  1.02it/s]100%|██████████| 9/9 [00:10<00:00,  1.13s/it]
+main_link_prediction.py[line:308]: - Eval Link Prediction valid MRR 0.1017 MR 39.7979 Hits@1 0.0410 Hits@50 0.1225 Hits@100 0.2005 NDCG 0.0000
+main_link_prediction.py[line:299]: - Epoch Time(s): 18.5029
+main_link_prediction.py[line:303]: - [Total] Epoch 00007 | Step 00001 | Loss 15.3484 | F1 0.3621 0.2736 0.5353 | Speed (samples/sec) 14137.1382|42411.4147 | Load 0.5769| train 5.0984 | GPU 471.1 MB
+utils.py[line:250]: - eval subgraph edge number: 16079
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:01<00:09,  1.20s/it] 22%|██▏       | 2/9 [00:02<00:09,  1.31s/it] 33%|███▎      | 3/9 [00:03<00:07,  1.33s/it] 44%|████▍     | 4/9 [00:05<00:06,  1.34s/it] 56%|█████▌    | 5/9 [00:06<00:04,  1.12s/it] 67%|██████▋   | 6/9 [00:07<00:03,  1.19s/it] 78%|███████▊  | 7/9 [00:08<00:02,  1.24s/it] 89%|████████▉ | 8/9 [00:10<00:01,  1.28s/it]100%|██████████| 9/9 [00:10<00:00,  1.01s/it]100%|██████████| 9/9 [00:10<00:00,  1.17s/it]
+main_link_prediction.py[line:308]: - Eval Link Prediction valid MRR 0.1042 MR 38.7120 Hits@1 0.0429 Hits@50 0.1252 Hits@100 0.2054 NDCG 0.0000
+main_link_prediction.py[line:299]: - Epoch Time(s): 21.8074
+main_link_prediction.py[line:303]: - [Total] Epoch 00008 | Step 00001 | Loss 15.2717 | F1 0.3642 0.2760 0.5351 | Speed (samples/sec) 13233.4081|39700.2242 | Load 0.6157| train 5.7566 | GPU 471.1 MB
+utils.py[line:250]: - eval subgraph edge number: 16079
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:01<00:10,  1.32s/it] 22%|██▏       | 2/9 [00:02<00:09,  1.34s/it] 33%|███▎      | 3/9 [00:03<00:06,  1.04s/it] 44%|████▍     | 4/9 [00:04<00:05,  1.02s/it] 56%|█████▌    | 5/9 [00:05<00:04,  1.14s/it] 67%|██████▋   | 6/9 [00:07<00:03,  1.20s/it] 78%|███████▊  | 7/9 [00:08<00:02,  1.27s/it] 89%|████████▉ | 8/9 [00:09<00:01,  1.29s/it]100%|██████████| 9/9 [00:10<00:00,  1.02s/it]100%|██████████| 9/9 [00:10<00:00,  1.14s/it]
+main_link_prediction.py[line:308]: - Eval Link Prediction valid MRR 0.1056 MR 37.9851 Hits@1 0.0416 Hits@50 0.1307 Hits@100 0.2127 NDCG 0.0000
+main_link_prediction.py[line:299]: - Epoch Time(s): 19.7913
+main_link_prediction.py[line:303]: - [Total] Epoch 00009 | Step 00001 | Loss 15.2135 | F1 0.3656 0.2779 0.5343 | Speed (samples/sec) 12572.3067|37716.9201 | Load 0.6457| train 6.1411 | GPU 471.1 MB
+utils.py[line:250]: - eval subgraph edge number: 16079
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:01<00:09,  1.16s/it] 22%|██▏       | 2/9 [00:02<00:08,  1.20s/it] 33%|███▎      | 3/9 [00:03<00:07,  1.26s/it] 44%|████▍     | 4/9 [00:04<00:05,  1.05s/it] 56%|█████▌    | 5/9 [00:05<00:03,  1.13it/s] 67%|██████▋   | 6/9 [00:06<00:02,  1.00it/s] 78%|███████▊  | 7/9 [00:07<00:02,  1.06s/it] 89%|████████▉ | 8/9 [00:08<00:01,  1.10s/it]100%|██████████| 9/9 [00:08<00:00,  1.18it/s]100%|██████████| 9/9 [00:08<00:00,  1.01it/s]
+main_link_prediction.py[line:308]: - Eval Link Prediction valid MRR 0.1080 MR 37.4024 Hits@1 0.0438 Hits@50 0.1308 Hits@100 0.2147 NDCG 0.0000
+main_link_prediction.py[line:330]: - Avg epoch time: 14.056136714087593
+run.sh: line 17: y: command not found
