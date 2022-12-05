@@ -14,7 +14,9 @@ class MultiLayerDropoutSampler(dgl.dataloading.BlockSampler):
     def sample_frontier(self, block_id, g, seed_nodes, *args, **kwargs):
         # Get all inbound edges to `seed_nodes` 获取 `seed_nodes` 的所有入边
         sg = dgl.in_subgraph(g, seed_nodes)
-        # DGL实现了多个可用于生成边界的函数。dgl.in_subgraph() 是一个生成子图的函数，该子图包括初始图中的所有节点和指定节点的入边。
+        # DGL实现了多个可用于生成边界的函数。dgl.in_subgraph() 是一个生成子图的函数
+        # 该子图包括初始图中的所有节点和指定节点的入边。图中其他的边都被删除。
+        # seed_nodes为最后的输出节点
         # 用户可以将其用作沿所有入边传递消息的边界。
 
         new_edges_masks = {}

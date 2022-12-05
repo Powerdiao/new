@@ -29,6 +29,7 @@ class MyDataset(object):
             # load coo adj matrix from npz
             coo_adj = sp.load_npz(os.path.join(self.path, "graph.edge.npz"))
             coo_adj_src = coo_adj.row  # 40787683 * 1
+
             coo_adj_dst = coo_adj.col  # 40787683 * 1
             coo_adj_data = coo_adj.data  # 40787683 * 1
 

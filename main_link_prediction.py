@@ -83,12 +83,12 @@ def run(proc_id, n_gpus, args, device, data):
     # sampler = dgl.dataloading.MultiLayerFullNeighborSampler(args.num_layers)
     sampler = MultiLayerDropoutSampler(p=args.dropout, num_layers=args.num_layers)
     # sampler = RandomWalkwithRestartSampler(args.num_layers, train_eids, restart_prob=0.3)
-
+    # 这个数据加载器使用用户自定义的采样器， 并且遍历种子节点生成一系列的块。
     dataloader = dgl.dataloading.EdgeDataLoader(
         g, train_eids, sampler,
         device=device,
         # g_sampling=dgl.edge_subgraph(g, train_eids, preserve_nodes=True),
-        negative_sampler=dgl.dataloading.negative_sampler.Uniform(args.num_negs),  # NegativeSampler(g, args.num_negs),
+        negative_sampler=dgl.dataloading.negative_sampler.Uniform(args.num_negs),  # NegativeSampler(g, args.num_negs),为每个边的源节点均匀采样num_negs个负样本的目标节点。
         batch_size=args.batch_size,
         shuffle=True,
         drop_last=False,
@@ -228,7 +228,7 @@ def run(proc_id, n_gpus, args, device, data):
             if '_N' in g.ntypes:
                 batch_inputs = {'_N': blocks[0].srcdata['feat']}
             else:
-                batch_inputs = (blocks[0].srcdata['feat']), blocks[0].dstdata['feat']
+                    batch_inputs = (blocks[0].srcdata['feat']), blocks[0].dstdata['feat']
 
             # Compute loss and prediction
             # outs = model(blocks, batch_inputs)
@@ -273,9 +273,9 @@ def run(proc_id, n_gpus, args, device, data):
             loss = utils.triple_loss(pos_score, neg_score)
             # loss = F.binary_cross_entropy_with_logits(scores, labels)
 
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+            optimizer.zero_grad()  # 将梯度清零，原因是不清零梯度会累加，梯度会在前一次的基础上无限下降，而不是对其进行覆盖。
+            loss.backward()  # 计算梯度
+            optimizer.step()  # 执行梯度下降，对学习的参数进行一次更新。
 
             # logger.info(decoder.rel_embedding[('author', 'writing', 'paper')].grad)
             # logger.info(encoder.adapt_ws['author'].weight.grad)

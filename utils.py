@@ -628,17 +628,12 @@ def f1_loss(y_true:torch.Tensor, y_pred:torch.Tensor, is_training=False) -> torc
     
     precision = tp / (tp + fp + epsilon)
     recall = tp / (tp + fn + epsilon)
-    # print("Precision {:4.4f} | Recall {:4.4f} | TP {:4.4f} | TN {:4.4f} | FP {:4.4f} | FN {:4.4f}".format(precision, recall, tp, tn, fp, fn))
+    # print("Precision {:4.4f} | Recall {:4.4f} | TP {:4.4f} | TN {:4.4f} | FP {:4.4f} | FN {:4.4f}".format(
+    # precision, recall, tp, tn, fp, fn))
     f1 = 2* (precision*recall) / (precision + recall + epsilon)
 
-    # logger.info(
-    #     "F1 {:4.4f} | Precision {:4.4f} | Recall {:4.4f} | TP {:4.4f} | TN {:4.4f} | FP {:4.4f} | FN {:4.4f}".format(f1,
-    #                                                                                                                  precision,
-    #                                                                                                                  recall,
-    #                                                                                                                  tp,
-    #                                                                                                                  tn,
-    #                                                                                                                  fp,
-    #                                                                                                                  fn))
+    # logger.info( "F1 {:4.4f} | Precision {:4.4f} | Recall {:4.4f} | TP {:4.4f} | TN {:4.4f} | FP {:4.4f} | FN {
+    # :4.4f}".format(f1, precision, recall, tp, tn, fp, fn))
     if not is_training:
         f1 = f1.detach()
     return f1.cpu().item(), precision.cpu().item(), recall.cpu().item()

@@ -2,7 +2,7 @@ CUDA_LAUNCH_BLOCKING=1 python -u main_link_prediction.py \
 --gpu 2 \
 --model RGCN \
 --decoder DisMult \
---dataset ACMDataset \
+--dataset MyDataset \
 --batch-size 80000 \
 --num-epochs 10 \
 --margin 10.0 \
